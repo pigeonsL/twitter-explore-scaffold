@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2% 2%;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    width: 25%;
+    height: 80%;
+    h2 {
+      margin-bottom: 10%;
+      align-self: center;
+    }
+    input {
+      width: 100%;
+      background-color: $body-bg;
+      border-style: none;
+      border-bottom: $border-color 1px solid;
+    }
+    .forget-pass {
+      color: $primary-color;
+    }
+    .btn-main-default {
+      @extend .btn;
+      @include btn-variant($primary-color, $primary-color, $body-bg);
+    }
+
+    .btn-main-primary {
+      @extend .btn;
+      @include btn-variant($white, $primary-color, $primary-color);
+    }
+    .or {
+      align-self: center;
+    }
+  }
+}

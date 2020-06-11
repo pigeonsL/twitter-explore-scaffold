@@ -1,0 +1,8 @@
+.btn {
+  border: {
+    radius: $border-radius-base;
+    style: solid;
+    width: $btn-border-width;
+  }
+  padding: $btn-padding-y $btn-padding-x;
+}

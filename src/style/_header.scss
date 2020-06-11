@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-y $padding-x;
+  border-bottom: 1px solid $border-color;
+
+  .btn-header-default {
+    @extend .btn;
+    @include btn-variant($primary-color, $primary-color, $body-bg);
+  }
+  .btn-header-primary {
+    @extend .btn;
+    @include btn-variant($white, $primary-color, $primary-color);
+  }
+}

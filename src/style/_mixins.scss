@@ -2,3 +2,9 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin btn-variant($color, $border-color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  border-color: $border-color;
+}
