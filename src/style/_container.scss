@@ -27,12 +27,10 @@
       color: $primary-color;
     }
     .btn-main-default {
-      @extend .btn;
       @include btn-variant($primary-color, $primary-color, $body-bg);
     }
 
     .btn-main-primary {
-      @extend .btn;
       @include btn-variant($white, $primary-color, $primary-color);
     }
     .or {

@@ -18,11 +18,17 @@
   <main class="container">
     <form>
       <h2>查看世界上正在发生的事情</h2>
-      <div>电话、邮件地址或用户名</div>
-      <input type="text">
-      <div>密码</div>
-      <input type="text">
-      <div class="forget-pass">忘记密码？</div>
+      <label for="username">
+        电话、邮件地址或用户名
+        <input type="text" class="username" id="username">
+      </label>
+      <label for="password">
+        密码
+        <input type="password" class="password" id="password">
+      </label>
+      <p class="forget-pass">
+        <a href="/forget-password">忘记密码?</a>
+      </p>
       <button class="btn btn-main-default">登录</button>
       <div class="or">或</div>
       <button class="btn btn-main-primary">注册</button>
